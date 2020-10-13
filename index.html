@@ -1,13 +1,31 @@
----
-layout: presentation
----
-
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+     <link rel="stylesheet" href="style.css">
+     
+     
+     <title></title>
+     
+  </head>
+  <body class="acceuil">
+   <div class="link">
+    <a href="background.html" >CSS Background</a> <br>
+    <a href="icons.html" >CSS Icons</a> <br>
+    <a href="font.html" >CSS Fonts</a> <br>
+    <a href="border.html" >CSS Border</a> <br>
+    <a href="link.html" >CSS Links</a> <br>
+    <a href="outline.html" >CSS Outline</a> <br>
+    <a href="text.html" >CSS Text</a> <br>
+    <a href="margin.html" >CSS Margin</a> <br>
+    <a href="padding.html" >CSS Padding</a> <br>
+    <a href="list.html" >CSS List</a> <br>
+    <a href="table.html" >CSS Table</a> <br>
+    <a href="position.html" >CSS position</a> <br>
+    <a href="overflow.html" >CSS Overflow</a> <br>
+    <a href="float.html" >CSS Float</a> <br>
+   </div>
+  </body>
+ </html>
